@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+}
+
+p {
+	word-break: keep-all;
+	max-width: 60ch;
+}
+
+p + p, a + p, a + a {
+	margin-top: 8px;
+}
+
+p a {
+	overflow-wrap: break-word;
+	
+}
+
+em {
+	font-style: italic;
+}
+
+.loud-voice {
+	font-family: "Nunito Sans", sans-serif;
+	font-size: clamp(30px,8vw,48px);
+	font-weight: 900;
+	line-height: 1.2;
+	margin-bottom: 20px;
+	color: var(--black);
+}
+
+.intro-voice {
+	font-family: "Nunito Sans", sans-serif;
+	font-size: clamp(25px,7vw,32px);
+	font-weight: bold;
+	letter-spacing: 0.02em;
+	line-height: 1.1;
+	margin-bottom: 15px;
+	color: var(--black);
+	text-transform: capitalize;
+}
+
+.small-intro-voice {
+	font-family: "Nunito Sans", sans-serif;
+	font-size: 20px;
+	font-style: italic;
+	text-transform: capitalize;
+	letter-spacing: 0.02em;
+	line-height: 1.5;
+	margin-bottom: 10px;
+	color: var(--black);
+}
+
+.calm-voice {
+	font-family: "Nunito Sans", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: .03em;
+	line-height: 1.7;
+	color: var(--black);
+}
+
+.invite-voice-alt {
+	font-family: "Nunito Sans", sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	text-decoration: none;
+	color: var(--white);
+	width: fit-content;
+}
+
+.invite-voice {
+	font-family: "Nunito Sans", sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	text-decoration: none;
+	color: var(--shgreen);
+	width: fit-content;
+}
+
+.invite-voice span {
+	display: inline;
+	background-image: linear-gradient(currentColor, currentColor);
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-size: 0% 2px;
+	transition: .2s;
+}
+
+.invite-voice:hover span, .invite-voice-alt:hover {
+	background-size: 100% 2px;
+
+}
