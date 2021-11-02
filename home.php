@@ -78,16 +78,16 @@
 			</inner-column>
 		</section>
 
-		<section class="pre-footer">
+		<section class="newsletter">
 			<inner-column>
+				
+				<h2 class="intro-voice">Follow My Newsletter!</h2>
 
-				<div class="newsletter">
-					
-					<h2 class="intro-voice">Follow My Newsletter!</h2>
+				<div>
+					<p class="calm-voice">You may also read more about my work process and field related interests in my Substack newsletter.</p>
 
-					<p class="calm-voice">You may also read more about my work process and field related interests in my <a href="https://apinchofcode.substack.com/" class="invite-voice" target="_blank"><span>Substack newsletter</span></a>.</p>
+					<a href="https://apinchofcode.substack.com/" class="invite-voice" target="_blank"><span>Go to newsletter</span> →</a>
 				</div>
-
 			</inner-column>
 		</section>
 

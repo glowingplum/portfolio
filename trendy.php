@@ -73,3 +73,16 @@
     
             </inner-column>
         </section>
+
+
+		<section class="contact" id="contact">
+			<inner-column>
+				
+				<h2 class="intro-voice">Contact</h2>
+				<p class="calm-voice">
+					What should I build for you? Did you like what you just saw? No? Either way, let me know!</p>
+
+				<a href="contact.html" target="_blank" class="button-primary">Contact Now</a>
+
+			</inner-column>
+		</section>

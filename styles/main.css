@@ -20,6 +20,7 @@ inner-column {
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: center;
 }
 
 @media (min-width: 800px) {
@@ -114,7 +115,7 @@ left and right: min 10px - after, 20px increments
 .site-header {
 	background-color: var(--shgray);
 	top: 0;
-	z-index: 1;
+	z-index: 2;
 }
 
 .site-header inner-column {
@@ -180,6 +181,7 @@ noise-wrapper inner-column {
 	display: flex;
 	justify-content: center;
 	padding: 0 20px;
+	text-align: left;
 }
 
 .index-header p {
@@ -257,6 +259,7 @@ noise-wrapper inner-column {
 	padding-top: 20px;
 	padding-left: 75px;
 	position: relative;
+	text-align: left;
 }
 
 .service-card picture {
@@ -273,10 +276,6 @@ noise-wrapper inner-column {
 		grid-gap: 40px;
 	}
 
-	.services inner-column {
-		padding-left: 40px;
-		padding-right: 40px;
-	}
 }
 
 
@@ -289,7 +288,7 @@ noise-wrapper inner-column {
 
 	.service-card {
 		border: 2px solid var(--black);
-		padding: 50px 20px 30px;
+		padding: 35px;
 		border-radius: 10px;
 		box-shadow: 3px 3px var(--black);
 	}
@@ -297,7 +296,7 @@ noise-wrapper inner-column {
 	.service-card picture {
 		width: 80px;
 		left: 70%;
-		top: -15px;
+		top: -25px;
 		background-color: var(--shgray);
 	}
 
@@ -324,39 +323,54 @@ noise-wrapper inner-column {
 	background-color: var(--shgray);
 }
 
-@media (min-width: 600px) {
-	
-	.contact inner-column {
-		padding-left: 12vw;
-		padding-right: 12vw;
-	}
+.contact inner-column {
+	width: fit-content;
+}
 
-	.contact .calm-voice {
-		font-size: 18px;
-		font-weight: bold;
-	}
+.contact .calm-voice {
+	font-size: 18px;
+	text-align: center;
+}
 
+.contact .button-primary {
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
+/* NEWSLETTER */
 
-/* PRE FOOTER */
+.newsletter {
+	display: flex;
+	flex-direction: column;
+}
+
+.newsletter inner-column div > * {
+	text-align: center; 
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.newsletter .calm-voice {
+	margin-bottom: 10px;
+}
 
 @media (min-width: 800px) {
 
-	.pre-footer inner-column {
+	.newsletter inner-column {
 		flex-direction: row;
+		gap: 30px;
+		justify-content: center;
+		align-items: center;
 	}
 
-	.newsletter {
-		margin-right: 10px;
-		flex: 1;
+	.newsletter inner-column div > * {
+		text-align: left;
+		margin-left: 0;
 	}
 
-	.pe {
-		display: none;
-		margin-left: 10px;
-		flex: 1;
+	.newsletter .intro-voice {
+		margin-bottom: 0;
 	}
 
 }
@@ -365,7 +379,7 @@ noise-wrapper inner-column {
 /* FOOTER */
 
 footer {
-	background-color: var(--shgray);
+	background-color: var(--black);
 }
 
 footer inner-column {
@@ -391,6 +405,7 @@ footer a {
 
 footer .calm-voice {
 	font-size: small;
+	color: var(--white);
 }
 
 footer picture {

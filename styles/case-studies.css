@@ -3,26 +3,39 @@
 	padding-right: 0;
 }
 
-.case-studies h2, .case-studies p, flex-wrapper p {
+.case-studies .intro-voice {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.case-studies p, flex-wrapper p {
 	margin-left: 20px;
 	margin-right: 20px;
 }
 
+.case-studies p.section-intro {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+} 
+
 .case-wrapper {
-	padding-top: 40px;
+	position: relative;
+	padding-top: 60px;
 }
 
 .case-title {
-	margin-top: 70px;
-	margin-bottom: 20px;
+	position: absolute;
 	background-color: var(--shgray);
 	color: var(--black);
-	padding: 2em 2em;
+	padding: 1em 1em;
+	padding-bottom: 2em;
+	width: 100vw;
 }
 
 .case-wrapper picture {
 	margin-bottom: 20px;
-	margin-top: 60px;
+	margin-top: 70px;
 }
 
 flex-wrapper {
@@ -41,6 +54,10 @@ flex-wrapper {
 	.case-studies div {
 		padding-left: 20px;
 		padding-right: 20px;
+	}
+
+	.case-title {
+		padding-bottom: 5em;
 	}
 
 	flex-wrapper p {
@@ -76,20 +93,20 @@ flex-wrapper {
 
 	h3.case-title {
 		position: sticky;
-		top: 20px;
+		top: 60px;
 		z-index: 1;
 		background-color: var(--shgray);
 		padding: 10px 50px;
 		margin-top: 100px;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 60px;
+		margin-bottom: -60px;
 		border-radius: 10px;
 		width: fit-content;
+		border: 2px solid var(--black);
+		box-shadow: 3px 3px var(--black);
 	}
 
 	flex-wrapper {
-		padding: 0 25px;
+		padding: 0;
 	}
 
 	flex-wrapper p, .case-wrapper:nth-of-type(even) flex-wrapper p {
@@ -105,6 +122,15 @@ flex-wrapper {
 
 	flex-wrapper:nth-of-type(odd) picture {
 		align-self: flex-end;
+	}
+
+	.case-wrapper:nth-of-type(odd) h3.case-title {
+		margin-right: 75px;
+		align-self: flex-end;
+	}
+
+	.case-wrapper:nth-of-type(even) h3.case-title {
+		margin-left: 75px;
 	}
 
 }

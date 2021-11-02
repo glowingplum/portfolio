@@ -24,7 +24,7 @@ em {
 
 .loud-voice {
 	font-family: "Nunito Sans", sans-serif;
-	font-size: clamp(30px,8vw,48px);
+	font-size: clamp(40px,8vw,50px);
 	font-weight: 900;
 	line-height: 1.2;
 	margin-bottom: 20px;
@@ -33,18 +33,25 @@ em {
 
 .intro-voice {
 	font-family: "Nunito Sans", sans-serif;
-	font-size: clamp(25px,7vw,32px);
+	font-size: clamp(30px,7vw,40px);
 	font-weight: bold;
 	letter-spacing: 0.02em;
-	line-height: 1.1;
-	margin-bottom: 15px;
+	line-height: 1.5;
+	margin-bottom: 20px;
 	color: var(--black);
 	text-transform: capitalize;
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.intro-voice::first-letter {
+	border-bottom: 4px solid currentColor;
 }
 
 .small-intro-voice {
 	font-family: "Nunito Sans", sans-serif;
-	font-size: 20px;
+	font-size: 26px;
 	font-style: italic;
 	text-transform: capitalize;
 	letter-spacing: 0.02em;
@@ -58,8 +65,9 @@ em {
 	font-size: 16px;
 	font-weight: 400;
 	letter-spacing: .03em;
-	line-height: 1.7;
+	line-height: 1.5;
 	color: var(--black);
+	text-align: left;
 }
 
 .invite-voice-alt {
@@ -80,7 +88,7 @@ em {
 	width: fit-content;
 }
 
-.invite-voice span {
+.invite-voice span, .invite-voice-alt span {
 	display: inline;
 	background-image: linear-gradient(currentColor, currentColor);
 	background-position: left bottom;
@@ -89,7 +97,6 @@ em {
 	transition: .2s;
 }
 
-.invite-voice:hover span, .invite-voice-alt:hover {
+.invite-voice:hover span, .invite-voice-alt:hover span {
 	background-size: 100% 2px;
-
 }
